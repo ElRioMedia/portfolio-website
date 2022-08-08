@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!-- Mobile Responsive Viewport Tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript Fundamentals</title>
+  <!-- My Link Order -->
+  <!-- The logic is: to load up what I want to prioritise, which is the Bootstrap framework first, then amend with my CSS rules, load extra icons from Font Awesome, then goto my Google Font API's for backup if all else fails when loading preferred fonts -->
+  <!-- Load Bootstrap, which will include font theme settings -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Load My CSS Rules -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Load Font Awesome Library for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous"
+    referrerpolicy="no-referrer">
+  <!-- Load Google Fonts, which will be used as a goto for best cross browser compatibility -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Ref: ||| Link from https://cdnjs.com/libraries/font-awesome -->
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header id="header"></header>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-light bg-light navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">El Rio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">El Rio</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <!-- About Page Link -->
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <!-- My Work (BS Dropdown Menu) -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle offcanvasNavbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">My Work</a>
+              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item" href="web development projects.html">Web Development Projects</a></li>
+                <li><a class="dropdown-item" href="client work.html">Client Work</a></li>
+              </ul>
+            </li>
+            <!-- Documentation (BS Dropdown Menu) -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle offcanvasNavbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Documentation</a>
+              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item" href="html & css - responsive web design.html">HTML & CSS</a></li>
+                <li><a class="dropdown-item" href="javascript - intro to javascript es6.html">JavaScript</a></li>
+                <li><a class="dropdown-item" href="#">Git, GitHub, Version Control (coming soon)</a></li>
+              </ul>
+            </li>
+            <!-- Download CV Link -->
+            <li class="nav-item">
+              <a class="nav-link" href="/Users/KatNine/Documents/- Courses/Web Development/App Brewery/My Coding Sites/My Personal Site_V1/documents/Eliot Finch_Web Developer CV goto GDrive and upwork for final version.pdf">Download CV</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Bootstrap Gallery + Title Section -->
+    <!-- TITLE SECTION -->
+    <section id="portfolio" class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">Intro To JavaScript ES6 (Udemy)</h1>
+          <p class="lead text-muted">Here I am presenting some selected sections from the Udemy Bootcamp Web Develoment course I am undertaking in conjunction with the freeCodeCamp course. Areas noted here differ from the content documented in the
+            other section and are laid out in more of a blog format, with some interactivity.</p>
+          <p class="lead text-muted">As some of these examples require the need to see the output of the console log, please visit either the direct links each entry, or click below to visit the collection on my CodePen.</p>
+        </div>
+      </div>
+      <a href="https://codepen.io/collection/zxwMQm" target="_blank">
+        <h3>Link to CodePen Collection</h3>
+      </a>
+      <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/" target="_blank">
+        <h3>Reference Link to Udemy BootCamp Course</h3>
+      </a>
+      <button class="btn-primary" type="button" name="button">CODEPEN</button>
+    </section>
+
+    <!-- SHOWING FUNDAMENTAL CONCEPTS  -->
+    <!-- Covering different areas of study from other JS page -->
+    <!-- Build lots of small applications -->
+
+    <!-- MODULES TO CHOOSE FROM -->
+
+    <!-- 1: CodePen Module -->
+
+    <!-- <article class="blog">
+      <h2>Title</h2>
+      <h3>Lesson SubTitle</h3>
+      <p>Quick Review:</p>
+      EMBED PEN SCRIPT HERE
+    </article> -->
+
+    <!-- 2: Details / Summary Module -->
+
+    <!-- <article class="">
+      <h2>Title.</h2>
+      <h3>Subtitle.</h3>
+      <details closed>
+        <summary>Q.
+          <p></p>
+          <pre></pre>
+        </summary>
+        <p>A.
+        </p>
+        <pre></pre>
+      </details>
+    </article> -->
+
+    <!-- ENTRIES -->
+
+    <!-- L118 - 120 -->
+    <article class="">
+      <!-- SUBTITLE AND TEXT -->
+      <h2>Functions Part 2 - Parameters and Arguments | GetMilk</h2>
+      <h3>Lesson 118 - 120</h3>
+      <p></p>
+      <!-- Direct Link To CodePen -->
+      <a href="https://codepen.io/elriomedia/pen/rNdGOVN?editors=1111" target="_blank"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2 direct-link">Direct Link on CodePen</button></a>
+      <!-- CODEPEN EMBED -->
+      <p class="codepen" data-height="700" data-default-tab="js" data-slug-hash="rNdGOVN" data-user="elriomedia"
+        style="height: 700px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/elriomedia/pen/rNdGOVN">
+            JS | L118 - L120 Functions Part 2 - Parameters and Arguments - GetMilk</a> by El Rio (<a href="https://codepen.io/elriomedia">@elriomedia</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    </article>
+
+    <!-- L115 - L117 -->
+    <article class="">
+      <!-- SUBTITLE AND TEXT -->
+      <h2>Functions Part 1 - Creating and Calling Functions | The Karel Robot</h2>
+      <h3>Lesson 115 - 117</h3>
+      <p></p>
+      <!-- CODEPEN EMBED -->
+      <p>Karel Robot Embed</p>
+      <pre>Karel Code Goes Here</pre>
+    </article>
+
+    <!-- L114.2 -->
+    <article class="">
+      <!-- SUBTITLE AND TEXT -->
+      <h2>Solution: Postfix and Prefix Increment Decrement Difference x++ or ++x</h2>
+      <h3>Lesson 114.2</h3>
+      <p></p>
+      <!-- Direct Link To CodePen -->
+      <a href="https://codepen.io/elriomedia/pen/ExEKoYm?editors=1111" target="_blank"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2 direct-link">Direct Link on CodePen</button></a>
+      <!-- CODEPEN EMBED -->
+      <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="ExEKoYm" data-user="elriomedia"
+        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/elriomedia/pen/ExEKoYm">
+            JS | 114.2 Solution: Postfix and Prefix Increment Decrement Difference x++ or ++x</a> by El Rio (<a href="https://codepen.io/elriomedia">@elriomedia</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    </article>
+
+    <!-- L114.1 -->
+    <article class="">
+      <!-- SUBTITLE AND TEXT -->
+      <h2>Problem: ++ and +=1 assignment and evaluation order difference</h2>
+      <h3>Lesson 114.1</h3>
+      <p></p>
+      <!-- Direct Link To CodePen -->
+      <a href="https://codepen.io/elriomedia/pen/LYdNzzP?editors=1111" target="_blank"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2 direct-link">Direct Link on CodePen</button></a>
+      <!-- CODEPEN EMBED -->
+      <p class="codepen" data-height="600" data-default-tab="js" data-slug-hash="LYdNzzP" data-user="elriomedia"
+        style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/elriomedia/pen/LYdNzzP">
+            JS | 114.1 Problem: ++ and +=1 assignment and evaluation order difference</a> by El Rio (<a href="https://codepen.io/elriomedia">@elriomedia</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    </article>
+
+    <!-- L113.2 -->
+    <article class="">
+      <!-- SUBTITLE AND TEXT -->
+      <h2>Simple Modulo Tutorial</h2>
+      <h3>Lesson 113.2</h3>
+      <p></p>
+      <!-- Direct Link To CodePen -->
+      <a href="https://codepen.io/elriomedia/pen/zYWqzeo?editors=1111" target="_blank"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2 direct-link">Direct Link on CodePen</button></a>
+      <!-- CODEPEN EMBED -->
+      <p class="codepen" data-height="500" data-default-tab="js" data-slug-hash="zYWqzeo" data-user="elriomedia"
+        style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/elriomedia/pen/zYWqzeo">
+            JS | L113.2 Simple Modulo Tutorial</a> by El Rio (<a href="https://codepen.io/elriomedia">@elriomedia</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    </article>
+
+    <!-- L113.1 -->
+    <article class="">
+      <!-- SUBTITLE AND TEXT -->
+      <h2>Dog to Human Years Calculator (and Precedence)</h2>
+      <h3>Lesson 113.1</h3>
+      <p></p>
+      <!-- Direct Link To CodePen -->
+      <a href="https://codepen.io/elriomedia/pen/ExEKXQy?editors=1111" target="_blank"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2 direct-link">Direct Link on CodePen</button></a>
+      <!-- CODEPEN EMBED -->
+      <p class="codepen" data-height="700" data-default-tab="js" data-slug-hash="ExEKXQy" data-user="elriomedia"
+        style="height: 700px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/elriomedia/pen/ExEKXQy">
+            JS | L113.1 Dog to Human Years Calculator (and Precedence)</a> by El Rio (<a href="https://codepen.io/elriomedia">@elriomedia</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    </article>
+
+    <!-- L112 -->
+    <article class="">
+      <!-- SUBTITLE AND TEXT -->
+      <h2>Casing Challenge .toUpperCase .slice</h2>
+      <h3>Lesson 112</h3>
+      <p></p>
+      <!-- Direct Link To CodePen -->
+      <a href="https://codepen.io/elriomedia/pen/PoRNjOB?editors=1111" target="_blank"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2 direct-link">Direct Link on CodePen</button></a>
+      <!-- CODEPEN EMBED -->
+      <p class="codepen" data-height="700" data-default-tab="js" data-slug-hash="PoRNjOB" data-user="elriomedia"
+        style="height: 700px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/elriomedia/pen/PoRNjOB">
+            JS | L112 Casing Challenge .toUpperCase .slice</a> by El Rio (<a href="https://codepen.io/elriomedia">@elriomedia</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    </article>
+
+    <!-- L111 -->
+    <article class="">
+      <!-- SUBTITLE AND TEXT -->
+      <h2>Changing Cases with .toUpperCase()</h2>
+      <h3>Lesson 111</h3>
+      <p></p>
+      <!-- Direct Link To CodePen -->
+      <a href="https://codepen.io/elriomedia/pen/GRxoQdE?editors=1111" target="_blank"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2 direct-link">Direct Link on CodePen</button></a>
+      <!-- CODEPEN EMBED -->
+      <p class="codepen" data-height="500" data-default-tab="js" data-slug-hash="GRxoQdE" data-user="elriomedia"
+        style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/elriomedia/pen/GRxoQdE">
+            JS | L111 Changing Cases with .toUpperCase()</a> by El Rio (<a href="https://codepen.io/elriomedia">@elriomedia</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    </article>
+
+    <!-- L110 -->
+    <article class="">
+      <!-- SUBTITLE AND TEXT -->
+      <h2>Slicing Strings with .slice(x,y)</h2>
+      <h3>Lesson 110</h3>
+      <p></p>
+      <!-- Direct Link To CodePen -->
+      <a href="https://codepen.io/elriomedia/pen/PoRZJBO?editors=1111" target="_blank"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2 direct-link">Direct Link on CodePen</button></a>
+      <!-- CODEPEN EMBED -->
+      <p class="codepen" data-height="700" data-default-tab="js" data-slug-hash="PoRZJBO" data-user="elriomedia"
+        style="height: 700px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/elriomedia/pen/PoRZJBO">
+            JS | L110 Slicing Strings with .slice(x,y)</a> by El Rio (<a href="https://codepen.io/elriomedia">@elriomedia</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    </article>
+
+    <!-- L109 -->
+    <article class="">
+      <!-- SUBTITLE AND TEXT -->
+      <h2>Character Calculator</h2>
+      <h3>Lesson 109</h3>
+      <p></p>
+      <!-- Direct Link To CodePen -->
+      <a href="https://codepen.io/elriomedia/pen/bGvEqGN?editors=1111" target="_blank"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2 direct-link">Direct Link on CodePen</button></a>
+      <!-- CODEPEN EMBED -->
+      <p class="codepen" data-height="700" data-default-tab="js" data-slug-hash="bGvEqGN" data-user="elriomedia"
+        style="height: 700px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/elriomedia/pen/bGvEqGN">
+            JS | L109 Character Calculator (.length + concatenation)</a> by El Rio (<a href="https://codepen.io/elriomedia">@elriomedia</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    </article>
+
+    <!-- L108 -->
+    <article class="">
+      <!-- SUBTITLE AND TEXT -->
+      <h2>String Concatenation</h2>
+      <h3>Lesson 108</h3>
+      <p></p>
+      <!-- Direct Link To CodePen -->
+      <a href="https://codepen.io/elriomedia/pen/bGvEBYv?editors=1111" target="_blank"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2 direct-link">Direct Link on CodePen</button></a>
+      <!-- CODEPEN EMBED -->
+      <p class="codepen" data-height="500" data-default-tab="js" data-slug-hash="bGvEBYv" data-user="elriomedia"
+        style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/elriomedia/pen/bGvEBYv">
+            JS | L108 String Concatenation</a> by El Rio (<a href="https://codepen.io/elriomedia">@elriomedia</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    </article>
+
+    <!-- L107 -->
+    <article class="">
+      <!-- SUBTITLE AND TEXT -->
+      <h2>Variable Naming Conventions</h2>
+      <h3>Lesson 107</h3>
+      <p></p>
+      <!-- Direct Link To CodePen -->
+      <a href="https://codepen.io/elriomedia/pen/WNzwOaB?editors=1111" target="_blank"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2 direct-link">Direct Link on CodePen</button></a>
+      <!-- CODEPEN EMBED -->
+      <p class="codepen" data-height="500" data-default-tab="html,result" data-slug-hash="WNzwOaB" data-user="elriomedia"
+        style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/elriomedia/pen/WNzwOaB">
+            JS | L107 Variable Naming Conventions</a> by El Rio (<a href="https://codepen.io/elriomedia">@elriomedia</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    </article>
+
+    <!-- L105 - 106 -->
+    <article class="">
+      <!-- SUBTITLE AND TEXT -->
+      <h2>Switching Variable Contents Test</h2>
+      <h3>Lesson 105 - 106</h3>
+      <p></p>
+      <!-- Direct Link To CodePen -->
+      <a href="https://codepen.io/elriomedia/pen/abYoRPK?editors=1111" target="_blank"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2 direct-link">Direct Link on CodePen</button></a>
+      <!-- CODEPEN EMBED -->
+      <p class="codepen" data-height="700" data-default-tab="js" data-slug-hash="abYoRPK" data-user="elriomedia"
+        style="height: 700px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/elriomedia/pen/abYoRPK">
+            JS | L105 - L106 Switching Variable Contents Test</a> by El Rio (<a href="https://codepen.io/elriomedia">@elriomedia</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    </article>
+
+    <!-- L105 Duplicate -->
+    <article class="">
+      <!-- SUBTITLE AND TEXT -->
+      <h2>Switching Variable Contents Test. (Understanding of Variables Explanation)</h2>
+      <h3>Lesson 105</h3>
+      <!-- DETAILS / SUMMARY REVEAL LAYOUT -->
+      <details closed>
+        <summary>How do you replace the contents of a and b?
+          <p>For this test we had to switch around the contents of the variables a and b, so a = 8 and b = 3.
+            <br>Rules for the test:
+            <br>No re-declaring of existing variables, no typing number values, no adjusting original code.
+          </p>
+          <pre>
+          function test() {
+              var a = "3";
+              var b = "8";
+          /***********Do not change the code above 👆*******/
+
+          //Write your code on lines 7 - 9:
+
+          /***********Do not change the code below 👇*******/
+              console.log("a is " + a);
+              console.log("b is " + b);
+          }</pre>
+        </summary>
+        <p>
+          For my logic I thought about her analogy of replacing the bucket of sand with a bucket of water.
+          Logically you cannot switch these in any way by pouring one into the other. You need to empty one
+          of the buckets first, and then replace it with the something else.
+          <br>So here I have created declared a new variable name 'c', which is where I chose to store the contents of 'a', then I can now safely replace 'a' with 'b', and then 'b' with 'c' (originally 'a'). See inline comments below in solution.
+        </p>
+        <pre>
+        function test() {
+            var a = "3";
+            var b = "8";
+        /***********Do not change the code above 👆*******/
+
+        //Write your code on lines 7 - 9:
+        var c = a; //store 'a' (3) in a new variable name 'c' (store contents in another place)
+        a = b; //now replace 'a' (3) with 'b' (8)
+        b = c; //now replace 'b' (8) with the value of 3, which we stored in new var 'c'
+
+        /***********Do not change the code below 👇*******/
+            console.log("a is " + a);
+            console.log("b is " + b);
+        }
+      </pre>
+      </details>
+    </article>
+
+    <!-- L104 -->
+    <article class="">
+      <!-- SUBTITLE AND TEXT -->
+      <h2>Simple Data Storage and Retrieval with Variables</h2>
+      <h3>Lesson 104</h3>
+      <p>This is simple example showing the fundamental concept of storing and retrieving string data with a variable.</p>
+      <!-- Direct Link To CodePen -->
+      <a href="https://codepen.io/elriomedia/pen/ZExzqvK?editors=1111" target="_blank"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2 direct-link">Direct Link on CodePen</button></a>
+      <button type="button" name="button"></button>
+      <!-- CODEPEN EMBED -->
+      <p class="codepen" data-height="700" data-default-tab="js" data-slug-hash="ZExzqvK" data-user="elriomedia"
+        style="height: 700px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/elriomedia/pen/ZExzqvK">
+            JS | L104 Simple Data Storage and Retrieval with Variables</a> by El Rio (<a href="https://codepen.io/elriomedia">@elriomedia</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    </article>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="footer" class="my-light-container my-flex">
+    <div class="my-flex">
+      <div class="icons-div my-flex">
+        <a class="footer-icons fa-brands fa-linkedin" href="https://www.linkedin.com/in/eliot-finch-9b1a6661/" target="_blank"></a>
+        <a class="footer-icons fa-solid fa-envelope" href="mailto:elcfinch@gmail.com?subject=Web Development Interview"></a>
+      </div>
+      <div class="copyright-div my-flex">
+        <p class="paragraph-footer">© Copyright El Rio Media Ltd. 2022</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Adding my JS here for use with Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

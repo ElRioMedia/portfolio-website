@@ -1,0 +1,224 @@
+/* ---------- ELEMENTS ----------- */
+/* WHY? */
+html, body {
+  height: 100%;
+}
+
+
+/* initial, inline, unset, contents */
+h3 {
+  margin-bottom: 1rem;
+}
+
+/* ---------- MODULES ----------- */
+/* Article Modules */
+article {
+  padding: 5% 10%;
+}
+
+.article-text {
+  margin-bottom: 4rem;
+}
+
+.article-codepen {}
+
+/* Colour Styling Modules */
+.my-light-container {
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, .55);
+}
+
+.my-grey-container {
+  /* This is bs preset colour: --bs-light-rgb */
+  background-color: rgb(248, 249, 250);
+  /* color: rgba(0, 0, 0, .55); */
+
+}
+
+.my-dark-container {
+  background-color: rgba(0, 0, 0, .55);
+  color: rgb(255, 255, 255);
+}
+
+.remove-margin {
+  margin-bottom: 0px;
+}
+
+/* ---------- HEADER ---------- */
+
+.header-wrapper {
+  height: 6%;
+}
+
+header {
+  height: 1rem;
+  background-color: black;
+}
+
+/* ---------- NAVBAR ---------- */
+nav {
+  padding: 0 10%;
+}
+
+/* Font colouring to sort */
+nav a {
+  color: rgba(0, 0, 0, .55) !important;
+}
+
+/* ---------- DROPDOWN MENU ---------- */
+/* Copied from dropdown sub menu */
+.dropdown-menu li {
+  position: relative;
+}
+
+.dropdown-menu .dropdown-submenu {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: -7px;
+}
+
+.dropdown-menu .dropdown-submenu-left {
+  right: 100%;
+  left: auto;
+}
+
+.dropdown-menu>li:hover>.dropdown-submenu {
+  display: block;
+}
+
+/* ---------- MAIN | HERO | TITLE | SECTION ---------- */
+main {}
+
+.my-centre-title-container {
+  width: 70%;
+  text-align: center;
+  /* background-color: grey; */
+  /* opacity: 0%; */
+}
+
+.my-inner-title-container {
+  padding: 1rem;
+}
+
+.my-title-text {
+  color: white;
+}
+
+.get-in-touch-btn {
+  margin-right: 1rem;
+}
+
+/* #title {} */
+.hero-image {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.35)), url("../images/hero-img.jpg");
+  /* Set a specific height */
+  /* height: 88vh; */
+  height: 89%;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+/* Centre (vertical) aligning footer */
+/* REFACTOR and USE FLEX */
+.hero-text {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-text {
+  color: white;
+}
+
+/* FLEX MODULE */
+/* Flex Module To Justify Content Centre, Centre Align Items, and Vertical Align */
+/* Remove This in Refactor */
+.my-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex: 1; */
+  /* Stretch out width to fill area? */
+}
+
+/* ---------- FOOTER SECTION ---------- */
+footer {
+  border: solid;
+  border-width: 0 0 0 1rem;
+  border-color: black;
+  /* height: 56px; */
+  height: 5%;
+  padding: 0 10%;
+}
+
+footer p {
+  font-size: small;
+  color: rgba(0, 0, 0, .55);
+}
+.paragraph-footer {
+  margin-bottom: 0px;
+}
+
+.footer-icons {
+  text-decoration: none;
+  padding: 0 0.5rem;
+}
+
+/* ---------- PAGE 2 (PORTFOLIO) ---------- */
+#about {
+  height: 50vh;
+}
+
+#portfolio {}
+
+
+.card-body {
+  /* original BS */
+  /* margin-bottom: 0.5rem; */
+  /* updated */
+  margin-bottom: 2rem;
+}
+.card-body {
+  /* original BS */
+  /* padding: 1rem 1rem; */
+  /* updated */
+  padding: 2rem;
+}
+
+/* ---------- JAVASCRIPT PAGE ---------- */
+
+.direct-link {
+  margin-bottom: 1.5rem;
+}
+
+
+
+
+/* ---------- MEDIA QUERY BREAKPOINTS ---------- */
+/* RESPONSIVE PROCESSING FOR MOBILE and IPAD */
+@media query {}
+
+/* ---------- BUG CHALLENGES ---------- */
+/* BS Dropdown Sub Menu Item Wrapping Bug */
+/* Previously BS set to no-wrap, and menu items were cutoff to the right hand side of the screen */
+.dropdown-item {
+  /* white-space: normal; */
+}
+
+/* Bug fix not working for carousel confliction with dropdown menu */
+/* .navbar {
+    position: relative !important;
+  } */

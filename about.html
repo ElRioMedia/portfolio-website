@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!-- Mobile Responsive Viewport Tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About</title>
+  <!-- My Link Order -->
+  <!-- The logic is: to load up what I want to prioritise, which is the Bootstrap framework first, then amend with my CSS rules, load extra icons from Font Awesome, then goto my Google Font API's for backup if all else fails when loading preferred fonts -->
+  <!-- Load Bootstrap, which will include font theme settings -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Load My CSS Rules -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Load Font Awesome Library for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous"
+    referrerpolicy="no-referrer">
+  <!-- Load Google Fonts, which will be used as a goto for best cross browser compatibility -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Ref: ||| Link from https://cdnjs.com/libraries/font-awesome -->
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header id="header"></header>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-light bg-light navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">El Rio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">El Rio</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <!-- About Page Link -->
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <!-- My Work (BS Dropdown Menu) -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle offcanvasNavbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">My Work</a>
+              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item" href="web development projects.html">Web Development Projects</a></li>
+                <li><a class="dropdown-item" href="client work.html">Client Work</a></li>
+              </ul>
+            </li>
+            <!-- Documentation (BS Dropdown Menu) -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle offcanvasNavbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Documentation</a>
+              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item" href="html & css - responsive web design.html">HTML & CSS</a></li>
+                <li><a class="dropdown-item" href="javascript - intro to javascript es6.html">JavaScript</a></li>
+                <li><a class="dropdown-item" href="#">Git, GitHub, Version Control (coming soon)</a></li>
+              </ul>
+            </li>
+            <!-- Download CV Link -->
+            <li class="nav-item">
+              <a class="nav-link" href="/Users/KatNine/Documents/- Courses/Web Development/App Brewery/My Coding Sites/My Personal Site_V1/documents/Eliot Finch_Web Developer CV goto GDrive and upwork for final version.pdf">Download CV</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- BootStrap Album + Title Section -->
+    <!-- TITLE SECTION -->
+    <section id="portfolio" class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">About</h1>
+          <p class="lead text-muted">I am an aspiring Web Developer, interested in learning Front End and Back End Develpoment. I also have many other skills and experiences to my arsenal... and more about myself and my work... check cv.</p>
+          <p class="lead text-muted">Here I am breaking down some sections of my work experience and skills to show supporting evidence and explaining in such a way showing their relevence to Web Development (parts of which I have mentioned on my
+            CV).</p>
+          <p class="lead text-muted">In case you missed it on the front page you can download my CV <a class="lead" href="/Users/KatNine/Documents/- Courses/Web Development/App Brewery/My Coding Sites/My Personal Site_V1/media/Eliot Finch_Web Developer CV goto GDrive and upwork for final version.pdf" download><strong>here</strong></a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG STYLE ENTRIES -->
+    <!-- ARTICLES -->
+    <section id="articles">
+
+      <!-- MINDSET -->
+      <article class="article-left-align my-grey-container">
+        <div class="b-example-divider"></div>
+        <div class="container col-xxl-10 px-4 py-5">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+              <img src="images/client work/el rio media-card-img.png" class="d-block mx-lg-auto img-fluid" alt="el rio media-card-img" width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+              <h1 class="display-5 fw-bold lh-1 mb-3">Director / Small Business Owner: Media and Marketing (and Aspiring Entrepreneur)</h1>
+              <p class="lead">When covid hit in 2020, I dropped my music career and made a pivot using existing skills I had picked up over the years when building my online presence, so I created a small business offering services building websites,
+                creating logos and branding packages, and teaching social media
+                marketing.
+              <p class="lead">This gave me the experience of seeing through the entire process of website development, from finding leads and networking, sales and marketing, building communication frameworks and processes for client liaison, scoping
+                calls and assessing the workload, understanding the importance of listening to the client, accounting and much more.</p>
+              <p class="lead">As good as this was when it worked and flowed, I did hit a wall with my technical skills as and wanted to move up from using drag and drop page builders (Wix / WordPress) to studying to become a fully-fledged Web
+                Developer.</p>
+              <p class="lead">You can see some of my selected client work projects <a href="client work.html"><strong>here</strong></a>.</p>
+              <!-- <p class="lead">I'm fully committed and passionate about both the design area and problem solving with programming, of web development and software engineering, and I'm hoping to land my first job... very soon! -->
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- MUSIC TECHNOLOGY / RECORD LABEL / PERFORMACE  -->
+      <article class="article-right-align">
+        <div class="b-example-divider"></div>
+        <div class="container col-xxl-10 px-4 py-5">
+          <div class="row flex-lg-row align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+              <img src="images/dj-img.jpg" class="d-block mx-lg-auto img-fluid" alt="dj-img" width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+              <h1 class="display-5 fw-bold lh-1 mb-3">Music Producer / DJ / Label Owner / Sound Engineer / Recording Engineer</h1>
+              <p class="lead">Previous to my Wed Development work, I studied Creative Music Technology (BA Hons) at University achieving a 2:1.</p>
+              <p class="lead">[Throughout] my music career I worked as DJ, an Artist, a Label owner, a Live Sound Engineer for bands, a Live Sound Engineer for club setups running laser shows in London, and even co-setup a recording studio in New
+                Zealand where I was the in house Sound Engineer and Producer.</p>
+              <p class="lead">[Throughout] all of this, it led me to building multiple websites and blogs, learning graphic design work, studying social media marketing, doing courses on film-making and virality for YouTube, video editing,
+                photography, tutoring, networking, developing communication skills, accounting and business setup, and much more.</p>
+              <p class="lead">All of this, summed with the technical skills learned and applied along the way constitutes to the arsenal of knowldge and experience I have in a multitude of relevant technical and personal skills directly and some
+                indirectly linked to Web Development.</p>
+              <p class="lead">I have selected some technical projects including audio and visual programming <a href="audio programming and music technology.html"><strong>here</strong></a>.
+                <!-- <p class="lead">And also other related works <a href="https://fraktionmusic.wixsite.com/recordlabel"><strong>here</strong></p> -->
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ARTWORK - ATTENTION TO DETAIL / CREATING CONCEPTUAL THINKING -->
+      <article class="article-left-align my-grey-container">
+        <div class="b-example-divider"></div>
+        <div class="container col-xxl-10 px-4 py-5">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+              <img src="images/album-artwork-img.jpg" class="d-block mx-lg-auto img-fluid" alt="album-artwork-img" width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+              <h1 class="display-5 fw-bold lh-1 mb-3">Artist: Hand Drawn Euclidean Geometry-Influenced Artwork</h1>
+              <p class="lead">In 2015 I started creating hand-drawn geometry artwork, which was to be for the purpose of creating artwork for my Techno/House digital record label 'Fraktion Music'.</p>
+              <!-- <p class="lead">I fell in love with this style of artwork and really connected with the geometry, where I studied Euclidean geometry for fun.</p> -->
+              <p class="lead">I worked through Euclid's postulates in sequence, where I understood the theory, then I elaborated on this encompassing my own concepts taken from the music.</p>
+              <p class="lead">Similarly to coding, this type of fine arts takes an amost scientific-level of precision, sometime where I'm judging close to 1/10 of a millimeter by eye, and there are times where it's essential to pause and step back
+                to look at the bigger picture again, to remember what's going on at the higher level. Not to mention, this type of work can be painstaking and requires a high level of patience, but however painstaking it may get, I never give up
+                until the work is finished, and I find that extremely rewarding.</p>
+              <p class="lead">I am in current process of bringing this work back to life, and redocumenting it, for now you can see my old blog <a href="https://fraktionmusic.wixsite.com/katnine/k9-blog/categories/artwork"><strong>here</strong></a>.
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- CHEF - WORK ETHIC -->
+      <article class="article-right-align">
+        <div class="b-example-divider"></div>
+        <div class="container col-xxl-10 px-4 py-5">
+          <div class="row flex-lg-row align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+              <img src="images/chef-photo-img.jpg" class="d-block mx-lg-auto img-fluid" alt="chef-photo-img" width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+              <h1 class="display-5 fw-bold lh-1 mb-3">Catering and Hospitality: Classically Trained Fine Dining Chef</h1>
+              <p class="lead">I have experience working in high end kitchens on and off since 2002. I quit officially in 2008 and then started my journey into Music Technology at Uni in 2009, however I always fell back on this, and it is still
+                something I love to this day.</p>
+              <p class="lead">This is the area of my work and life where I developed great discipline and a strong work ethic. I'm very proud of what I have achieved with this, and I'll never stop cooking... after all, I gotta eat! I
+                currently work 2 days a week at a fine dining catering events company in my home village where I grew up in south Cambridgeshire.</p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- SKILLS -->
+    <h3>Skills Table</h3>
+    <h4>Here is a list of technical skills I have experience with over my years of work and studies</h4>
+    <table>
+      <tr>
+        <td>c1</td>
+        <td>c2</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <h3>Add Marquee</h3>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="footer" class="my-grey-container my-flex">
+    <div class="my-flex">
+      <div class="icons-div my-flex">
+        <a class="footer-icons fa-brands fa-linkedin"></a>
+        <a class="footer-icons fa-solid fa-envelope"></a>
+      </div>
+      <div class="copyright-div my-flex">
+        <p class="paragraph-footer">© Copyright El Rio Media Ltd. 2022</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Adding my JS here for use with Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!-- Mobile Responsive Viewport Tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML & CSS: Responsive Web Design</title>
+  <!-- My Link Order -->
+  <!-- The logic is: to load up what I want to prioritise, which is the Bootstrap framework first, then amend with my CSS rules, load extra icons from Font Awesome, then goto my Google Font API's for backup if all else fails when loading preferred fonts -->
+  <!-- Load Bootstrap, which will include font theme settings -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Load My CSS Rules -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Load Font Awesome Library for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous"
+    referrerpolicy="no-referrer">
+  <!-- Load Google Fonts, which will be used as a goto for best cross browser compatibility -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Ref: ||| Link from https://cdnjs.com/libraries/font-awesome -->
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header id="header"></header>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-light bg-light navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">El Rio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">El Rio</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <!-- About Page Link -->
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <!-- My Work (BS Dropdown Menu) -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle offcanvasNavbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">My Work</a>
+              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item" href="web development projects.html">Web Development Projects</a></li>
+                <li><a class="dropdown-item" href="client work.html">Client Work</a></li>
+              </ul>
+            </li>
+            <!-- Documentation (BS Dropdown Menu) -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle offcanvasNavbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Documentation</a>
+              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item" href="html & css - responsive web design.html">HTML & CSS</a></li>
+                <li><a class="dropdown-item" href="javascript - intro to javascript es6.html">JavaScript</a></li>
+                <li><a class="dropdown-item" href="#">Git, GitHub, Version Control (coming soon)</a></li>
+              </ul>
+            </li>
+            <!-- Download CV Link -->
+            <li class="nav-item">
+              <a class="nav-link" href="/Users/KatNine/Documents/- Courses/Web Development/App Brewery/My Coding Sites/My Personal Site_V1/documents/Eliot Finch_Web Developer CV goto GDrive and upwork for final version.pdf">Download CV</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Bootstrap Gallery + Title Section -->
+    <!-- TITLE SECTION -->
+    <section id="portfolio" class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">Responsive Web Design (freeCodeCamp Certificate)</h1>
+          <p class="lead text-muted">This section shows my documentation and progress through my studying progress through freeCodeCamp's Responsive Web Design Certificate (HTML and CSS)</p>
+          <p class="lead text-muted">The majority of these are code-alongs, but there are major projects within the course which are my own creations. I am presenting all projects on my CodePen account, where you can see my annotated code and the
+            result using the embedded scripts.
+        </div>
+      </div>
+      <a href="https://codepen.io/collection/qOmarR" target="_blank">
+        <h3>Link to CodePen Collection</h3>
+      </a>
+      <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/" target="_blank">
+        <h3>Reference Link to freeCodeCamp's Responsive Web Design Certification</h3>
+      </a>
+      <button class="btn-primary" type="button" name="button">CODEPEN</button>
+    </section>
+
+    <!-- ARTICLE ENTRIES -->
+
+    <!-- TASK 6 - CSS FLEXBOX -->
+    <article class="my-grey-container">
+      <!-- ARTICLE WRITEUP -->
+      <div class="article-text">
+        <h2>CSS FlexBox</h2> <!-- NOT NEEDED? -->
+        <h3>Task 6 - Learn CSS Flexbox by Building a Photo Gallery</h3>
+        <p>This is an exercise to show the learning and understanding of the CSS FlexBox Model by building a responsive photo gallery.</p>
+        <p>Areas covered:</p>
+        <ul>
+          <p>HTML</p>
+          <li>- re-typing out the boilerplate for good practise and revisiting the html tag</li>
+          <li>- re-learning and typing out the meta tag viewport and encoding settings</li>
+          <br>
+          <p>CSS</p>
+          <li>- More Global Normalisation settings with box-sizing</li>
+          <li>- Transorming text from lowercase to uppercase with text-transform</li>
+          <li>- Re-learning border-bottom shorthand</li>
+          <li>- Understanding the parent - child container roles in the Flexbox Model</li>
+          <li>- Learning about item distribution and arrangement</li>
+          <li>- Balancing image sizes and understaing distortion fixes</li>
+          <li>- Understanding the Flexbox alignment and responsive stacking order</li>
+        </ul>
+      </div>
+      <!-- CODEPEN EMBED -->
+      <p class="codepen" data-height="700" data-default-tab="css,result" data-slug-hash="MWVXrrq" data-user="elriomedia"
+        style="height: 700px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/elriomedia/pen/MWVXrrq">
+            HTML CSS | FCC | Task 6 - Learn CSS Flexbox by Building a Photo Gallery</a> by El Rio (<a href="https://codepen.io/elriomedia">@elriomedia</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    </article>
+
+    <!-- REGISTRATION FORM -->
+    <article class="my-light-container">
+      <!-- ARTICLE WRITEUP -->
+      <div class="article-text">
+        <h2>Registration Form</h2>
+        <h3>Task 4 - Learn HTML Forms By Building a Registration Form</h3>
+        <p>Here we have implemented our first CSS by building a Cafe Menu.</p>
+        <p>Areas covered and learned were:</p>
+        <ul>
+          <li>- CSS Syntax - simple syntax rules, (e.g. property: value;), circle shorthand</li>
+          <li>- Fonts - Font fallbacks, serif, sans-serif, font-size (px), font-style (italic)</li>
+          <li>- Display - block, inline, inline-block</li>
+          <li>- Box Model - Margin, padding, border</li>
+          <li>- Selectors - Type/Tag, Class, Pseudo, Multiple, Hierarchical</li>
+          <li>- Responsiveness - implemented with % rules and margin: auto on a div</li>
+          <li>- More HTML - meta (defining character set, and viewport guidelines for use with mobile)</li>
+          <li>- Solving Text Wrapping Issue -</li>
+          <li>- Link States using Pseudo-Classes - :hover, :active, :visited</li>
+          <li>- Align - text-align, margin: auto</li>
+          <li>- Articles - Used for creating entries for products in the menu</li>
+          <li>- Design Consistencies - exaplained through the use of consistent colouring of text, hr, contrast of div-to-text and background image (brown).</li>
+        </ul>
+        <!-- Referencing CSS - inline, internal, external (via <link>)  -->
+      </div>
+      <!-- CODEPEN EMBED -->
+      <div class="article-codepen">
+        <p class="codepen" data-height="700" data-default-tab="html,result" data-slug-hash="yLKpdbq" data-user="elriomedia"
+          style="height: 700px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+          <span>See the Pen <a href="https://codepen.io/elriomedia/pen/yLKpdbq">
+              Task 4 - Learn HTML Forms By Building a Registration Form</a> by El Rio (<a href="https://codepen.io/elriomedia">@elriomedia</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+      </div>
+    </article>
+
+    <!-- MARKER PENS -->
+    <article class="my-grey-container">
+      <!-- ARTICLE WRITEUP -->
+      <div class="article-text">
+        <h2>Marker Pens</h2>
+        <h3>Task 3 - Learn CSS By Building A Set Of Coloured Marker Pens</h3>
+        <p>For this task we built 3 different coloured marker pens to give us an introduction into CSS colours, colour theory and how they can be implemented.</p>
+        <p>HTML - The pens are built by layering divs and using the inline-block positioning to move elements accordingly.</p>
+        <p>List of areas covered and learned:</p>
+        <p>Colour Theory:</p>
+        <ul>
+          <li>- Primary, secondary and tertiary Colours</li>
+          <li>- Complementary colours, hue, colour wheel, colour theory, contrast, accent, opacity (wall=opaque, glass=transparent), colour models (additive RGB and subtractive CMYK)</li>
+        </ul>
+        <p>CSS Colours:</p>
+        <ul>
+          <li>- Keywords, RGB(A), HEX, HSL(A)</li>
+          <li>- Alpha channel</li>
+          <li>- Positioning - Centring with margin: auto (must have width set)</li>
+          <li>- Display Property - display: inline, block, inline-block</li>
+          <li>- Border Property - border: width style color;</li>
+          <li>- Box-Shadow Property - box-shadow: offsetX offsetY blurRadius spreadRadius color; (blurRadius and spreadRadius optional and default to 0)</li>
+          <li>- Gradients - background: linear-gradient(direction, colour1, colour2, and more…)</li>
+        </ul>
+      </div>
+      <!-- CODEPEN EMBED -->
+      <div class="article-codepen">
+        <p class="codepen" data-height="633.75" data-default-tab="html,result" data-slug-hash="zYRJPMO" data-user="elriomedia"
+          style="height: 633.75px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+          <span>See the Pen <a href="https://codepen.io/elriomedia/pen/zYRJPMO">
+              Task 3 - Learn CSS By Building A Set Of Coloured Marker Pens</a> by El Rio (<a href="https://codepen.io/elriomedia">@elriomedia</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+      </div>
+    </article>
+
+    <!-- CAFE MENU -->
+    <article class="my-light-container">
+      <!-- ARTICLE WRITEUP -->
+      <div class="article-text">
+        <h2>CSS Cafe Menu</h2>
+        <h3>Task 2 - Learn Basic CSS By Building A Cafe Menu</h3>
+        <p>Here we have implemented our first CSS by building a Cafe Menu.</p>
+        <p>Areas covered and learned were:</p>
+        <ul>
+          <li>- CSS Syntax - simple syntax rules, (e.g. property: value;), circle shorthand</li>
+          <li>- Fonts - Font fallbacks, serif, sans-serif, font-size (px), font-style (italic)</li>
+          <li>- Display - block, inline, inline-block</li>
+          <li>- Box Model - Margin, padding, border</li>
+          <li>- Selectors - Type/Tag, Class, Pseudo, Multiple, Hierarchical</li>
+          <li>- Responsiveness - implemented with % rules and margin: auto on a div</li>
+          <li>- More HTML - meta (defining character set, and viewport guidelines for use with mobile)</li>
+          <li>- Solving Text Wrapping Issue -</li>
+          <li>- Link States using Pseudo-Classes - :hover, :active, :visited</li>
+          <li>- Align - text-align, margin: auto</li>
+          <li>- Articles - Used for creating entries for products in the menu</li>
+          <li>- Design Consistencies - exaplained through the use of consistent colouring of text, hr, contrast of div-to-text and background image (brown).</li>
+        </ul>
+        <!-- Referencing CSS - inline, internal, external (via <link>)  -->
+      </div>
+      <!-- CODEPEN EMBED -->
+      <div class="article-codepen">
+        <p class="codepen" data-height="700" data-default-tab="html,result" data-slug-hash="WNMJdJo" data-user="elriomedia"
+          style="height: 700px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+          <span>See the Pen <a href="https://codepen.io/elriomedia/pen/WNMJdJo">
+              Task 2 - Learn Basic CSS By Building A Cafe Menu</a> by El Rio (<a href="https://codepen.io/elriomedia">@elriomedia</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+      </div>
+    </article>
+
+    <!-- CAT PHOTO APP -->
+    <article class="my-grey-container">
+      <!-- ARTICLE WRITEUP -->
+      <div class="article-text">
+        <h2>Cat Photo App</h2>
+        <h3>Task 1 - Learn HTML By Building A Cat Photo App</h3>
+        <p>This is the first project on the Responsive Web Design Certificate course on freeCodeCamp.</p>
+        <p>I am making here a simple application using just HTML.</p>
+        <p>This is a good example, showing some simple semantic HTML structuring of this application.</p>
+        <p>We have covered an understanding with the DOM model elements (html, head, body), headings, lists, figures, and touched on some form functionality.</p>
+        <p>We have also implemented some anchor links, referenced some images via a Content Distribution Network (CDN).</p>
+      </div>
+      <!-- CODEPEN EMBED -->
+      <div class="article-codepen">
+        <p class="codepen" data-height="700" data-default-tab="html,result" data-slug-hash="OJQZxYv" data-user="elriomedia"
+          style="height: 700px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+          <span>See the Pen <a href="https://codepen.io/elriomedia/pen/OJQZxYv">
+              Learn HTML By Building A Cat Photo App</a> by El Rio (<a href="https://codepen.io/elriomedia">@elriomedia</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="footer" class="my-light-container my-flex">
+    <div class="my-flex">
+      <div class="icons-div my-flex">
+        <a class="footer-icons fa-brands fa-linkedin" href="https://www.linkedin.com/in/eliot-finch-9b1a6661/" target="_blank"></a>
+        <a class="footer-icons fa-solid fa-envelope" href="mailto:elcfinch@gmail.com?subject=Web Development Interview"></a>
+      </div>
+      <div class="copyright-div my-flex">
+        <p class="paragraph-footer">© Copyright El Rio Media Ltd. 2022</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Adding my JS here for use with Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
