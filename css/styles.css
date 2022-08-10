@@ -1,9 +1,8 @@
 /* ---------- ELEMENTS ----------- */
-/* WHY? */
+/* */
 html, body {
   height: 100%;
 }
-
 
 /* initial, inline, unset, contents */
 h3 {
@@ -12,7 +11,7 @@ h3 {
 
 /* ---------- MODULES ----------- */
 /* Article Modules */
-article {
+article, .skills-container {
   padding: 5% 10%;
 }
 
@@ -29,10 +28,9 @@ article {
 }
 
 .my-grey-container {
-  /* This is bs preset colour: --bs-light-rgb */
+  /* This is the BS preset colour: --bs-light-rgb */
   background-color: rgb(248, 249, 250);
   /* color: rgba(0, 0, 0, .55); */
-
 }
 
 .my-dark-container {
@@ -45,19 +43,25 @@ article {
 }
 
 /* ---------- HEADER ---------- */
-
 .header-wrapper {
   height: 6%;
+  min-height: 65px;
 }
 
 header {
-  height: 1rem;
+  /* height: 1rem; */
+  height: 20%;
   background-color: black;
 }
 
 /* ---------- NAVBAR ---------- */
 nav {
   padding: 0 10%;
+}
+
+.navbar {
+  height: 80% !important;
+  /* ... */
 }
 
 /* Font colouring to sort */
@@ -119,8 +123,8 @@ main {}
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.35)), url("../images/hero-img.jpg");
   /* Set a specific height */
-  /* height: 88vh; */
   height: 89%;
+  min-height: 600px;
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
@@ -159,8 +163,8 @@ footer {
   border: solid;
   border-width: 0 0 0 1rem;
   border-color: black;
-  /* height: 56px; */
   height: 5%;
+  min-height: 50px;
   padding: 0 10%;
 }
 
@@ -168,6 +172,7 @@ footer p {
   font-size: small;
   color: rgba(0, 0, 0, .55);
 }
+
 .paragraph-footer {
   margin-bottom: 0px;
 }
@@ -184,13 +189,13 @@ footer p {
 
 #portfolio {}
 
-
 .card-body {
   /* original BS */
   /* margin-bottom: 0.5rem; */
   /* updated */
   margin-bottom: 2rem;
 }
+
 .card-body {
   /* original BS */
   /* padding: 1rem 1rem; */
@@ -198,14 +203,51 @@ footer p {
   padding: 2rem;
 }
 
-/* ---------- JAVASCRIPT PAGE ---------- */
+/* ---------- SC GALLERY ---------- */
 
+.my-gallery-container {
+  padding: 10% 5%;
+}
+/* Parent Processing */
+.my-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 1.5rem;
+}
+
+/* *** Using Descendant Selector to refactor use of classes in HTML code *** Nice.
+More dry code. Will look into doing this across the website. */
+.my-gallery img {
+  /* display: flex; */
+  height: 450px;
+  width: 450px;
+  object-fit: cover;
+  /* margin: 1%; */
+  border-radius: 1%;
+  /* load: lazy; */
+}
+
+/* Creating an extra flex-item (element) with no content to balance the images
+when the flexbox wraps into 2 columns.
+
+The element created is a child that comes last in line to the element selected
+by the ::after pseudo-element selector. In this case it's the .gallery selector,
+so a new <img> element is created. */
+.my-gallery::after {
+  /* Pseudo-Element Selector */
+  content: "";
+  /* add blank content */
+  width: 450px;
+  /* give it the same width settings as other items */
+}
+
+/* ---------- JAVASCRIPT PAGE ---------- */
 .direct-link {
   margin-bottom: 1.5rem;
 }
-
-
-
 
 /* ---------- MEDIA QUERY BREAKPOINTS ---------- */
 /* RESPONSIVE PROCESSING FOR MOBILE and IPAD */
