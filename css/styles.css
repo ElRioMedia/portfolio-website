@@ -182,32 +182,34 @@ footer p {
   padding: 0 0.5rem;
 }
 
-/* ---------- PAGE 2 (PORTFOLIO) ---------- */
+/* ---------- PAGE 2 - ABOUT ---------- */
 #about {
   height: 50vh;
 }
 
-#portfolio {}
-
 .card-body {
   /* original BS */
   /* margin-bottom: 0.5rem; */
-  /* updated */
-  margin-bottom: 2rem;
-}
-
-.card-body {
-  /* original BS */
   /* padding: 1rem 1rem; */
   /* updated */
+  margin-bottom: 2rem;
   padding: 2rem;
 }
 
-/* ---------- SC GALLERY ---------- */
+/* FIND AND DELETE THIS IN THE HTML */
+#portfolio {}
 
+/* ---------- PAGE 3 - WEB DEV PROJECTS ---------- */
+/* ---------- PAGE 4 - CLIENT WORK ---------- */
+.btn-group {
+  gap: 1rem;
+}
+/* ---------- PAGE 5 - AUDIO TECH ---------- */
+/* Gallery processing */
 .my-gallery-container {
   padding: 10% 5%;
 }
+
 /* Parent Processing */
 .my-gallery {
   display: flex;
@@ -244,7 +246,8 @@ so a new <img> element is created. */
   /* give it the same width settings as other items */
 }
 
-/* ---------- JAVASCRIPT PAGE ---------- */
+/* ---------- PAGE 6 HTML CSS FCC ---------- */
+/* ---------- PAGE 7 INTRO TO JS ---------- */
 .direct-link {
   margin-bottom: 1.5rem;
 }
@@ -256,11 +259,6 @@ so a new <img> element is created. */
 /* ---------- BUG CHALLENGES ---------- */
 /* BS Dropdown Sub Menu Item Wrapping Bug */
 /* Previously BS set to no-wrap, and menu items were cutoff to the right hand side of the screen */
-.dropdown-item {
-  /* white-space: normal; */
-}
-
+/* .dropdown-item { white-space: normal; } */
 /* Bug fix not working for carousel confliction with dropdown menu */
-/* .navbar {
-    position: relative !important;
-  } */
+/* .navbar { position: relative !important; } */
